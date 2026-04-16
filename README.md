@@ -1,36 +1,99 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# PreachBro
 
-## Getting Started
+PreachBro is an AI sermon prep companion built for pastors.
 
-First, run the development server:
+It helps you move from a blank page to a clear, biblical message faster by guiding your prep in a conversational workflow.
+
+## Why PreachBro
+
+- Turn sermon ideas into structured outlines in minutes
+- Stay focused with guided prompts for key sermon steps
+- Refine language, tone, and clarity through follow-up chat
+- Keep momentum during weekly message preparation
+
+## Product Highlights
+
+- Chat-first sermon workspace in a distraction-light dashboard
+- Outline mode for structured sermon responses
+- General mode for brainstorming and refining ideas
+- Friendly prompt presets to quickly start common prep tasks
+- Mobile-friendly, modern interface for desktop and laptop workflows
+
+## Who It Is For
+
+- Lead pastors preparing weekly sermons
+- Teaching pastors building series messages
+- Ministry leaders crafting devotionals or short talks
+- Bi-vocational pastors who need faster prep cycles
+
+## Real-World Use Cases
+
+- Build a 3-point sermon outline from a passage
+- Generate possible sermon titles from your theme
+- Rewrite transitions between points for stronger flow
+- Draft practical application sections for different audiences
+- Brainstorm illustration ideas that reinforce biblical truth
+
+## Screenshots (Optional)
+
+This project currently does not include screenshots.
+
+If you add them later, a good convention is to place them in `public/screenshots/` and reference them in this section.
+
+## Quick Start
+
+### 1. Install dependencies
+
+```bash
+npm install
+```
+
+### 2. Configure environment variables
+
+Create a `.env.local` file in the project root:
+
+```bash
+OPENAI_API_KEY=your_openai_api_key
+```
+
+### 3. Run locally
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000 in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Core Routes
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `/` marketing homepage
+- `/dashboard` sermon assistant chat UI
+- `/signin` sign-in page UI
+- `/register` registration page UI
+- `/api/assistant` assistant API endpoint
 
-## Learn More
+## Tech Stack
 
-To learn more about Next.js, take a look at the following resources:
+- Next.js 16 (App Router)
+- React 19
+- TypeScript
+- Tailwind CSS 4
+- Framer Motion
+- OpenAI Node SDK
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Available Scripts
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- `npm run dev` start local development server
+- `npm run build` build for production
+- `npm run start` run production build
+- `npm run lint` run ESLint
 
-## Deploy on Vercel
+## Deployment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Deploy on Vercel or any Node-compatible platform that supports Next.js App Router.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+For Vercel:
+
+1. Import this repository
+2. Set `OPENAI_API_KEY` in project environment variables
+3. Deploy
